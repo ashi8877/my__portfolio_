@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashi Pathak | Data Analyst Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header>
+        <a href="#home" class="logo"><span>&lt;Aashi</span> Pathak /&gt;</a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="navbar">
+            <ul id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#workflow-nodes">Ecosystem</a></li>
+                <li><a href="#pipeline-flow">Engine</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-left">
+                <div class="status-pill">Available for Roles</div>
+                <p class="welcome-text">Hello, Welcome to my space...</p>
+                <h1>I am <span class="pink-text" id="typing-text">Python &amp;</span></h1>
+                <p class="hero-desc">
+                    Passionate Data Analyst with knowledge of Python, SQL, Power BI, Excel, Tableau, Machine Learning and Artificial Intelligence.
+                </p>
+                <div class="hero-buttons">
+                    <a href="Aashi_Resume_.pdf" download="Aashi_Resume_.pdf" class="btn-pink">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn-outline">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/ashi8877" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aashi-pathak-7825a5392" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:pathakaashi369@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <!-- Analytics Engine Status Box -->
+                <div class="analytics-card">
+                    <div class="analytics-header">
+                        <div class="analytics-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="analytics-title">
+                            <i class="fas fa-cog"></i> Analytics Engine Status
+                        </div>
+                    </div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-icon"><i class="fas fa-database"></i></div>
+                        <div class="pipeline-info">
+                            <h4>1. Data Ingestion &amp; SQL ETL</h4>
+                            <p>Cleaning, Extracting &amp; Querying raw sources</p>
+                        </div>
+                    </div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-icon"><i class="fab fa-python"></i></div>
+                        <div class="pipeline-info">
+                            <h4>2. Predictive Modeling &amp; ML</h4>
+                            <p>Pandas Wrangling &amp; ML Classification</p>
+                        </div>
+                    </div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-icon"><i class="fas fa-chart-bar"></i></div>
+                        <div class="pipeline-info">
+                            <h4>3. Business Intelligence</h4>
+                            <p>Interactive Power BI &amp; Excel Dashboards</p>
+                        </div>
+                    </div>
+                    <div class="pipeline-footer">
+                        <span class="active-badge"><i class="fas fa-circle" style="font-size: 8px;"></i> Active Pipeline</span>
+                        <span>Python • SQL • Power BI</span>
+                    </div>
+                </div>
+
+                <!-- Profile Photo Frame -->
+                <div class="hero-profile-box">
+                    <div class="hero-avatar-ring">
+                        <img src="aashi.png" alt="Aashi Pathak">
+                    </div>
+                    <div class="hero-avatar-label">
+                        <i class="fas fa-circle-check" style="color: var(--pink);"></i> Aashi Pathak • Data Analyst
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scrolling Tech Marquee Bar -->
+        <div class="tech-ticker-container">
+            <div class="tech-ticker-track">
+                <div class="ticker-item"><span class="ticker-dot"></span> Python &amp; SQL</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> Power BI &amp; Tableau</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> Advanced Excel</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> Machine Learning</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> AI &amp; Data Science</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> Streamlit Apps</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> Jupyter Notebooks</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> Data Visualization</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> GitHub &amp; VS Code</div>
+                <!-- Duplicate for infinite smooth loop -->
+                <div class="ticker-item"><span class="ticker-dot"></span> Python &amp; SQL</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> Power BI &amp; Tableau</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> Advanced Excel</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> Machine Learning</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> AI &amp; Data Science</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> Streamlit Apps</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> Jupyter Notebooks</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> Data Visualization</div>
+                <div class="ticker-item"><span class="ticker-dot"></span> GitHub &amp; VS Code</div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="centered-section">
+            <h2 class="section-heading">About Me</h2>
+            <div class="about-card">
+                <p>
+                    I am an MCA (AI &amp; Data Science) student with a strong interest in Data Analytics, Machine Learning, and Artificial Intelligence. I completed my BCA and a Data Analyst with AI &amp; ML program, where I gained hands-on experience with Python, SQL, Power BI, Excel, Tableau, Statistics, and Machine Learning. I enjoy building real-world dashboards and data-driven solutions to solve business problems.
+                </p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="centered-section">
+            <h2 class="section-heading">Education &amp; <span class="pink-text">learning.</span></h2>
+            <div class="cards-grid-3">
+                <div class="dark-card">
+                    <span class="year-pink">2026 — Present</span>
+                    <div class="pill-badge">MASTER'S</div>
+                    <h3>MCA — AI &amp; Data Science</h3>
+                    <p>Master of Computer Applications with focus on Artificial Intelligence and Data Science.</p>
+                </div>
+                <div class="dark-card">
+                    <span class="year-pink">2022 — 2025</span>
+                    <div class="pill-badge">BACHELOR'S</div>
+                    <h3>Bachelor of Computer Applications</h3>
+                    <p>Undergraduate foundation in Computer Applications.</p>
+                </div>
+                <div class="dark-card">
+                    <span class="year-pink">2025 — Present</span>
+                    <div class="pill-badge">PROFESSIONAL LEARNING</div>
+                    <h3>Data Analytics + AI/ML</h3>
+                    <p>Practical learning across Python, SQL, Excel, Statistics, Power BI, Tableau and Machine Learning.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="centered-section">
+            <h2 class="section-heading">Experience</h2>
+            <div class="exp-stack">
+                <div class="dark-card exp-card">
+                    <h3>AI &amp; Machine Learning Intern</h3>
+                    <div class="company-name">Ducat India</div>
+                    <div class="year-pink">2026 - Present</div>
+                    <ul>
+                        <li>Developing supervised and unsupervised Machine Learning models for predictive analysis using Python.</li>
+                        <li>Designing end-to-end data pipelines using SQL and Pandas to preprocess complex datasets.</li>
+                        <li>Building interactive dashboards and AI-driven solutions to solve business challenges.</li>
+                    </ul>
+                </div>
+                <div class="dark-card exp-card">
+                    <h3>Data Analyst Intern</h3>
+                    <div class="company-name">S O Infotech Pvt. Ltd.</div>
+                    <div class="year-pink">2025</div>
+                    <ul>
+                        <li>Transformed raw operational data into actionable business insights using SQL and Excel.</li>
+                        <li>Designed interactive Power BI dashboards to track key performance indicators (KPIs).</li>
+                        <li>Automated routine data reporting workflows to improve reporting efficiency and streamline stakeholder decision-making.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="centered-section">
+            <h2 class="section-heading">Projects</h2>
+            <div class="cards-grid-3">
+                <div class="dark-card project-card">
+                    <h3>Excel Swiggy Sales Dashboard</h3>
+                    <p>Interactive Excel dashboard analyzing Swiggy sales data, order trends, and revenue insights.</p>
+                    <a href="https://github.com/ashi8877" target="_blank" class="github-link"><i class="fab fa-github"></i> View Project &rarr;</a>
+                </div>
+                <div class="dark-card project-card">
+                    <h3>Customer Churn ML</h3>
+                    <p>Machine learning classification model predicting customer retention and churn behaviors.</p>
+                    <a href="https://github.com/ashi8877" target="_blank" class="github-link"><i class="fab fa-github"></i> View Project &rarr;</a>
+                </div>
+                <div class="dark-card project-card">
+                    <h3>Retail Inventory &amp; Demand Analysis</h3>
+                    <p>Analytics dashboard for supply chain inventory optimization and demand forecasting.</p>
+                    <a href="https://github.com/ashi8877" target="_blank" class="github-link"><i class="fab fa-github"></i> View Project &rarr;</a>
+                </div>
+                <div class="dark-card project-card">
+                    <h3>Spam Detection</h3>
+                    <p>NLP and Machine Learning classification model to detect spam messages accurately.</p>
+                    <a href="https://github.com/ashi8877" target="_blank" class="github-link"><i class="fab fa-github"></i> View Project &rarr;</a>
+                </div>
+                <div class="dark-card project-card">
+                    <h3>AUniversity Website</h3>
+                    <p>Web design and frontend development project built for academic platform UI.</p>
+                    <a href="https://github.com/ashi8877" target="_blank" class="github-link"><i class="fab fa-github"></i> View Project &rarr;</a>
+                </div>
+                <div class="dark-card project-card">
+                    <h3>Customer Segmentation Dashboard</h3>
+                    <p>Dashboard segmenting customers based on purchase behavior and demographic metrics.</p>
+                    <a href="https://github.com/ashi8877" target="_blank" class="github-link"><i class="fab fa-github"></i> View Project &rarr;</a>
+                </div>
+                <div class="dark-card project-card">
+                    <h3>HR Analytics Dashboard</h3>
+                    <p>Power BI / Excel dashboard evaluating employee attrition, hiring performance, and workplace metrics.</p>
+                    <a href="https://github.com/ashi8877" target="_blank" class="github-link"><i class="fab fa-github"></i> View Project &rarr;</a>
+                </div>
+                <div class="dark-card project-card">
+                    <h3>Ecommerce Sales Dashboard</h3>
+                    <p>Visualizing e-commerce sales KPIs, product categories performance, and revenue trends.</p>
+                    <a href="https://github.com/ashi8877" target="_blank" class="github-link"><i class="fab fa-github"></i> View Project &rarr;</a>
+                </div>
+                <div class="dark-card project-card">
+                    <h3>Injury Analytics Dashboard</h3>
+                    <p>Reporting dashboard tracking workplace injury frequency, risk levels, and safety compliance.</p>
+                    <a href="https://github.com/ashi8877" target="_blank" class="github-link"><i class="fab fa-github"></i> View Project &rarr;</a>
+                </div>
+                <div class="dark-card project-card">
+                    <h3>Sales Data Analysis Dashboard</h3>
+                    <p>Advanced Excel dashboard using Pivot Tables, Charts, and formulas for dynamic sales reporting.</p>
+                    <a href="https://github.com/ashi8877" target="_blank" class="github-link"><i class="fab fa-github"></i> View Project &rarr;</a>
+                </div>
+                <div class="dark-card project-card">
+                    <h3>Titanic Survival Analysis</h3>
+                    <p>Exploratory Data Analysis (EDA) and Pandas DataFrame manipulations on the Titanic dataset.</p>
+                    <a href="https://github.com/ashi8877" target="_blank" class="github-link"><i class="fab fa-github"></i> View Project &rarr;</a>
+                </div>
+                <div class="dark-card project-card">
+                    <h3>Sigma Web Dev Course</h3>
+                    <p>Hands-on full-stack web development exercises and code repositories.</p>
+                    <a href="https://github.com/ashi8877" target="_blank" class="github-link"><i class="fab fa-github"></i> View Project &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="centered-section">
+            <h2 class="section-heading">Certifications</h2>
+            <div class="cards-grid-3">
+                <div class="dark-card cert-card">
+                    <h3>Data Analyst with AI/ML</h3>
+                    <div class="issuer-pink">Ducat India</div>
+                    <p>Comprehensive training in AI, Machine Learning, Data Analytics, Python, and SQL.</p>
+                </div>
+                <div class="dark-card cert-card">
+                    <h3>Generative AI for All</h3>
+                    <div class="issuer-pink">Infosys Springboard</div>
+                    <p>Foundational concepts of Generative AI, LLMs, and real-world AI applications.</p>
+                </div>
+                <div class="dark-card cert-card">
+                    <h3>Microsoft Excel</h3>
+                    <div class="issuer-pink">Coursera</div>
+                    <p>Core data analysis, formulas, functions, and spreadsheet management skills.</p>
+                </div>
+                <div class="dark-card cert-card">
+                    <h3>Data Analytics Simulation</h3>
+                    <div class="issuer-pink">Deloitte Australia (Forage)</div>
+                    <p>Hands-on business intelligence, data modeling, and strategic analysis simulation.</p>
+                </div>
+                <div class="dark-card cert-card">
+                    <h3>Data Visualisation</h3>
+                    <div class="issuer-pink">Forage</div>
+                    <p>Empowering Business with Effective Insights through data storytelling &amp; dynamic charts.</p>
+                </div>
+                <div class="dark-card cert-card">
+                    <h3>Data Analysis with Python</h3>
+                    <div class="issuer-pink">IBM / Cognitive Class</div>
+                    <p>Practical experience in data wrangling, EDA, Pandas, NumPy, and statistical analysis.</p>
+                </div>
+                <div class="dark-card cert-card">
+                    <h3>MERN Stack Training</h3>
+                    <div class="issuer-pink">GRASTech</div>
+                    <p>Project-based full-stack web and mobile application development training.</p>
+                </div>
+                <div class="dark-card cert-card">
+                    <h3>Employability Enhancement</h3>
+                    <div class="issuer-pink">YES Foundation &amp; Learnet</div>
+                    <p>Professional development, workplace ethics, and communication enhancement training.</p>
+                </div>
+                <div class="dark-card cert-card">
+                    <h3>LLM for Young Developers</h3>
+                    <div class="issuer-pink">NASSCOM, Meta &amp; INDIAai</div>
+                    <p>Foundational knowledge of Large Language Models and AI architecture.</p>
+                </div>
+                <div class="dark-card cert-card">
+                    <h3>AI Skills Passport</h3>
+                    <div class="issuer-pink">EY &amp; Microsoft</div>
+                    <p>Artificial Intelligence fundamentals, business applications, and tech mindset.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Ecosystem Map Section -->
+        <section id="workflow-nodes" class="workflow-section">
+            <div class="workflow-header-wrap">
+                <h2 class="section-heading">Project Ecosystem Map</h2>
+                <p class="workflow-subtitle">Each branch is a project. Select one to explore its features and technologies.</p>
+                
+                <div class="workflow-filters">
+                    <button class="filter-btn active" onclick="filterWorkflow('all')">All</button>
+                    <button class="filter-btn" onclick="filterWorkflow('ml')">Machine Learning</button>
+                    <button class="filter-btn" onclick="filterWorkflow('analytics')">Analytics</button>
+                    <button class="filter-btn" onclick="filterWorkflow('dashboard')">Dashboard</button>
+                </div>
+            </div>
+
+            <div class="workflow-container">
+                <div class="workflow-hub-node">
+                    <div class="hub-box">
+                        <h3>Projects</h3>
+                        <span>12 Branches</span>
+                    </div>
+                </div>
+
+                <div class="workflow-branches-list">
+                    <div class="workflow-branch-card active" onclick="showNodeDetails('churn')">
+                        <h4>Customer Churn ML</h4>
+                        <p>Machine Learning | Built</p>
+                    </div>
+                    <div class="workflow-branch-card" onclick="showNodeDetails('swiggy')">
+                        <h4>Excel Swiggy Sales Dashboard</h4>
+                        <p>Analytics | Built</p>
+                    </div>
+                    <div class="workflow-branch-card" onclick="showNodeDetails('spam')">
+                        <h4>Spam Detection</h4>
+                        <p>Machine Learning | Built</p>
+                    </div>
+                    <div class="workflow-branch-card" onclick="showNodeDetails('hr')">
+                        <h4>HR Analytics Dashboard</h4>
+                        <p>Dashboard | Built</p>
+                    </div>
+                    <div class="workflow-branch-card" onclick="showNodeDetails('retail')">
+                        <h4>Retail Inventory &amp; Demand</h4>
+                        <p>Analytics | Built</p>
+                    </div>
+                </div>
+
+                <div class="workflow-inspector" id="workflowInspector">
+                    <p class="inspector-desc" id="inspDesc">ML classification model predicting customer retention and churn behaviors accurately.</p>
+                    
+                    <h5 class="inspector-subtitle">Features</h5>
+                    <div class="inspector-pills" id="inspFeatures">
+                        <span>Predictive Classification</span>
+                        <span>Data Preprocessing</span>
+                        <span>Evaluation Metrics</span>
+                        <span>Scikit-learn Pipeline</span>
+                    </div>
+
+                    <h5 class="inspector-subtitle">Technologies</h5>
+                    <div class="inspector-pills tech-pills" id="inspTech">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>Pandas</span>
+                        <span>GitHub repo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI & Data Processing Engine Section -->
+        <section id="pipeline-flow" class="pipeline-flow-section">
+            <div class="workflow-header-wrap">
+                <h2 class="section-heading">AI &amp; Data Processing Engine</h2>
+                <p class="workflow-subtitle">Interactive architecture showing raw data processing to AI and BI output.</p>
+            </div>
+
+            <div class="pipeline-flow-box">
+                <span class="pill-floating tag-py">PYTHON</span>
+                <span class="pill-floating tag-sql">SQL</span>
+                
+                <div class="pipeline-nodes-track">
+                    <div class="pipe-node active" onclick="showPipeDetails('raw')">
+                        <div class="pipe-icon-box"><i class="fas fa-database"></i></div>
+                        <h4>Raw Data</h4>
+                    </div>
+                    <div class="pipe-connector"></div>
+                    <div class="pipe-node" onclick="showPipeDetails('sql')">
+                        <div class="pipe-icon-box"><i class="fas fa-table"></i></div>
+                        <h4>SQL &amp; ETL</h4>
+                    </div>
+                    <div class="pipe-connector"></div>
+                    <div class="pipe-node" onclick="showPipeDetails('python')">
+                        <div class="pipe-icon-box"><i class="fab fa-python"></i></div>
+                        <h4>Python (Pandas)</h4>
+                    </div>
+                    <div class="pipe-connector"></div>
+                    <div class="pipe-node" onclick="showPipeDetails('ml')">
+                        <div class="pipe-icon-box"><i class="fas fa-brain"></i></div>
+                        <h4>Machine Learning</h4>
+                    </div>
+                    <div class="pipe-connector"></div>
+                    <div class="pipe-node" onclick="showPipeDetails('bi')">
+                        <div class="pipe-icon-box"><i class="fas fa-chart-bar"></i></div>
+                        <h4>Power BI Output</h4>
+                    </div>
+                </div>
+
+                <div class="pipeline-inspector-card" id="pipeInspector">
+                    <h4 id="pipeTitle">1. Raw Data Source &amp; Ingestion</h4>
+                    <p id="pipeDesc">Collecting raw datasets from CSV files, Excel spreadsheets, relational databases, and live APIs for analysis.</p>
+                </div>
+
+                <span class="pill-floating tag-brackets">{ DATA ANALYTICS &amp; ML }</span>
+            </div>
+        </section>
+
+        <!-- Skills Section (Toolkit) -->
+        <section id="skills" class="centered-section">
+            <h2 class="section-heading">My technical <span class="toolkit-box">toolkit.</span></h2>
+            <div class="cards-grid-3">
+                <div class="dark-card skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Data Analytics</h3>
+                    <div class="pills-wrap">
+                        <span>Data Analysis</span>
+                        <span>Data Cleaning</span>
+                        <span>Statistics</span>
+                        <span>Data Visualization</span>
+                        <span>Business Analysis</span>
+                        <span>EDA</span>
+                        <span>ETL Pipelines</span>
+                    </div>
+                </div>
+                <div class="dark-card skill-card">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Programming</h3>
+                    <div class="pills-wrap">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Matplotlib</span>
+                        <span>Seaborn</span>
+                        <span>Scikit-learn</span>
+                        <span>OOP Concepts</span>
+                    </div>
+                </div>
+                <div class="dark-card skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Database</h3>
+                    <div class="pills-wrap">
+                        <span>SQL</span>
+                        <span>Queries</span>
+                        <span>Joins</span>
+                        <span>Subqueries</span>
+                        <span>Data Handling</span>
+                        <span>Aggregations</span>
+                        <span>Database Design</span>
+                    </div>
+                </div>
+                <div class="dark-card skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>BI &amp; Visualization</h3>
+                    <div class="pills-wrap">
+                        <span>Power BI</span>
+                        <span>Advanced Excel</span>
+                        <span>Tableau</span>
+                        <span>Dashboards</span>
+                        <span>Pivot Tables</span>
+                        <span>DAX Queries</span>
+                    </div>
+                </div>
+                <div class="dark-card skill-card">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI &amp; Machine Learning</h3>
+                    <div class="pills-wrap">
+                        <span>Machine Learning</span>
+                        <span>AI</span>
+                        <span>Regression</span>
+                        <span>Classification</span>
+                        <span>Clustering</span>
+                        <span>NLP</span>
+                        <span>Generative AI</span>
+                    </div>
+                </div>
+                <div class="dark-card skill-card">
+                    <div class="skill-icon"><i class="fas fa-wrench"></i></div>
+                    <h3>Tools</h3>
+                    <div class="pills-wrap">
+                        <span>Jupyter</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>Microsoft Excel</span>
+                        <span>Streamlit</span>
+                        <span>OpenCV</span>
+                        <span>Canva</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="centered-section contact-section">
+            <div class="contact-card-box">
+                <h2 class="section-heading contact-title">Let's build something<br><span class="pink-text">data-driven.</span></h2>
+                <p class="contact-email">Email: <a href="mailto:pathakaashi369@gmail.com">pathakaashi369@gmail.com</a></p>
+                <p class="contact-subtitle">
+                    I'm open to professional opportunities, internships, projects and networking<br>
+                    related to Data Analytics, AI and Machine Learning.
+                </p>
+
+                <!-- Contact Form connected to your Formspree endpoint -->
+                <form action="https://formspree.io/f/xeagkpjv" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="4" placeholder="Your Message..." required class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="btn-pink" style="border:none; cursor:pointer;">Let's connect</button>
+                </form>
+
+                <div class="contact-links" style="margin-top: 25px;">
+                    <a href="https://www.linkedin.com/in/aashi-pathak-7825a5392" target="_blank" class="btn-outline-light">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/ashi8877" target="_blank" class="btn-outline-light">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="Aashi_Resume_.pdf" download="Aashi_Resume_.pdf" class="btn-outline-light">
+                        <i class="fas fa-download"></i> Download resume
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aashi Pathak. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Floating Button -->
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- AI Portfolio Chatbot Widget with Photo Avatar -->
+    <button id="chatbotToggleBtn" title="Chat with Aashi's AI Assistant">
+        <img src="aashi.png" alt="Aashi">
+    </button>
+
+    <div class="chatbot-window" id="chatbotWindow">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar-photo">
+                    <img src="aashi.png" alt="Aashi">
+                </div>
+                <div>
+                    <h4>Aashi's Assistant</h4>
+                    <span><i class="fas fa-circle" style="font-size: 7px; color: #22c55e;"></i> Online</span>
+                </div>
+            </div>
+            <button id="closeChatBtn"><i class="fas fa-times"></i></button>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="bot-msg">
+                Hi! 👋 I am Aashi Pathak's AI Assistant. Feel free to ask me about Aashi's <b>Skills</b>, <b>Projects</b>, <b>Experience</b>, <b>Education</b>, or <b>Contact</b>!
+            </div>
+            <div class="quick-chips">
+                <button onclick="sendQuickReply('Skills')">Skills</button>
+                <button onclick="sendQuickReply('Projects')">Projects</button>
+                <button onclick="sendQuickReply('Experience')">Experience</button>
+                <button onclick="sendQuickReply('Contact')">Contact</button>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Ask something about Aashi..." onkeypress="handleChatKey(event)">
+            <button id="sendChatBtn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
